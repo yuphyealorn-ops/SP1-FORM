@@ -9,13 +9,13 @@
 Goal: Feature A (body-part measurements) fully working, and the exercise library ready for Feature B.
 
 ### 🧱 Week 1 (26 Nov – 2 Dec): Groundwork & Data Format
-- [ ] Review current code (app.py, scanner.js, metrics.js, storage.js) and agree on who owns which file
-- [ ] Design storage v2 data format for check-ins
-    - [ ] New fields: chest, shoulders, upper arm L/R, hip, thigh L/R, calf L/R
-    - [ ] All new fields optional (old check-ins stay valid)
-- [ ] Write migration: v1 saved data → v2 automatically on load
-- [ ] Add validation ranges for each new measurement in metrics.js (catch typos like 350 cm)
-- [ ] Write measuring guide text (where to put the tape for each body part)
+- [ ] Review current code (app.py, scanner.js, metrics.js, storage.js) and agree on who owns which file — review done ([docs/code-review.md](docs/code-review.md)); ownership still to be agreed by the team
+- [x] Design storage v2 data format for check-ins ([docs/storage-v2.md](docs/storage-v2.md))
+    - [x] New fields: chest, shoulders, upper arm L/R, hip, thigh L/R, calf L/R
+    - [x] All new fields optional (old check-ins stay valid)
+- [x] Write migration: v1 saved data → v2 automatically on load
+- [x] Add validation ranges for each new measurement in metrics.js (catch typos like 350 cm)
+- [x] Write measuring guide text (where to put the tape for each body part) ([docs/measuring-guide.md](docs/measuring-guide.md))
 
 ### 📏 Week 2 (3 – 9 Dec): Feature A — Check-in Form
 - [ ] Add new measurement fields to the check-in form
@@ -23,7 +23,7 @@ Goal: Feature A (body-part measurements) fully working, and the exercise library
     - [ ] Short "where to measure" hint under each field
 - [ ] Show validation messages inline (out of range, empty)
 - [ ] Save new fields with each check-in and include them in data export
-- [ ] Unit tests: validation ranges + v1 → v2 migration
+- [x] Unit tests: validation ranges + v1 → v2 migration (done early, in Week 1)
 
 ### 📈 Week 3 (10 – 16 Dec): Feature A — Progress Charts
 - [ ] Trend line chart for each body part over time
