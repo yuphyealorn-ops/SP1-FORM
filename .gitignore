@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+public/vendor/mediapipe/
+public/models/*.task
+public/models/assets-manifest.json

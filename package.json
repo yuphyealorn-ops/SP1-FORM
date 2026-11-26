@@ -1,0 +1,17 @@
+{
+  "name": "form-gym-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "FORM: a private gym app that helps AU students see how their training changes each body part (Senior Project I).",
+  "scripts": {
+    "start": "python3 app.py",
+    "test": "node --test tests/*.test.js && python3 -m unittest discover -s tests -p \"test_*.py\"",
+    "test:js": "node --test tests/*.test.js",
+    "test:py": "python3 -m unittest discover -s tests -p \"test_*.py\"",
+    "check": "node --check public/js/app.js && node --check public/js/scanner.js && node --check public/js/metrics.js && node --check public/js/storage.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
